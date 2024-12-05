@@ -1,0 +1,566 @@
+/*CSS - ZONABICI © 2024*/
+/*ICONS - Flaticon*/
+/*ICONS - Boxicons*/
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
+/*―――――――――― DEFAULT ――――――――――*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-primary: "Roboto", serif; 
+    --font-secondary: "Oswald", sans-serif;
+    --color-button: #e63946;
+    --color-button-hover: #c72535;
+}
+
+
+/* ―――――――――― MENU NAVBAR ―――――――――― */
+
+nav {
+    font-family: var(--font-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    justify-content: space-around;
+}
+
+.nv-logo {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+}
+
+.nv-logo img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.nv-logo span {
+    font-family: var(--font-secondary);
+    font-style: italic;
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nv-search {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    padding: 7px 10px;
+    width: 350px;
+  }
+  
+  .nv-search i {
+    color: #000000;
+    font-size: 18px;
+    margin-right: 8px;
+  }
+  
+  .nv-search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    color: #000000;
+  }
+
+  .nv-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nv-icons i {
+    font-size: 27px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    align-items: center;
+}
+
+.nv-icons i:hover {
+    color: #ff6347;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Iconos responsive */
+.responsive {
+    visibility: hidden;
+}
+
+/* ―――――――――― HEADER ―――――――――― */
+
+header {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    background: url(../assets/images.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    box-shadow: 0 -6px 10px -1px rgba(0, 0, 0, 0.5),0 6px 10px -1px rgba(0, 0, 0, 0.5); ;
+    border-radius: 10px;
+    animation: slider 40s infinite linear;
+}
+
+@keyframes slider {
+    25% {
+        background-image: url(../assets/slider-1.jpg);
+    }
+
+    50% {
+        background-image: url(../assets/slider-2.jpg);
+    }
+
+    75% {
+        background-image: url(../assets/slider-3.jpg);
+    }
+
+    100% {
+        background-image: url(../assets/slider-4.jpg);
+    }
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; 
+}
+
+.header-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--color-button);
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    font-family: var(--font-primary);
+}
+
+.header-button:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* ―――――――――― MAIN ―――――――――― */
+
+/* Seccion 0: Opciones de Navbar */
+.navbar-options-grid {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.navbar-options-grid img {
+    margin-bottom: 10px;
+}
+
+.navbar-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 160px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.navbar-option p {
+    font-weight: bold;
+    margin: 0;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.navbar-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección 1: Catálogo de bicicletas */
+.catalog {
+    margin-bottom: 2rem;
+    margin-top: 100px;
+    font-family: var(--font-primary);
+}
+
+.catalog h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.catalog span {
+    color: #e63946;
+    font-size: 25px;
+}
+
+.catalog .bikes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.catalog .bike {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.catalog .bike:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bike h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+.bike .precio {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.bike .precio del {
+    color: #b0b0b0;
+    font-size: 16px;
+}
+
+.bike button {
+    padding: 10px 20px;
+    background-color: var(--color-button);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bike button:hover {
+    background-color: var(--color-button-hover); 
+}
+
+.link_producto {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #6b6b6b;
+    text-decoration: none;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.link_producto:hover {
+    color: #414141;
+}
+
+.catalog .bike img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.catalog .bike img:hover {
+    transform: scale(1.05);
+}
+
+/* Seccion 3: Descuentos y ofertas especiales */
+.discount {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Sección 4: Mapa ubicacion */
+.location-container .map {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.location-container iframe {
+    border: 0;
+    width: 70%;
+    height: 500px;
+    border-radius: 8px;
+}
+
+/* Sección 5: Subscripcion Noticias */
+.newsletter {
+    font-family: var(--font-primary);
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.newsletter p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem; 
+}
+
+.newsletter-form input[type="email"] {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1; 
+    max-width: 600px; 
+}
+
+.newsletter-form button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: var(--color-button);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: var(--color-button-hover); 
+}
+
+/* Sección 6: Marcas */
+.partner-container .logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.partner-container .logos img {
+    max-height: 800px;
+    max-width: 120px;
+}
+
+/* ―――――――――― FOOTER ―――――――――― */
+
+footer {
+    background-color: white;
+    box-shadow: 0 -6px 10px -1px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 15px;
+    bottom: 0;
+
+}
+
+.logo-footer {
+    font-family: var(--font-secondary);
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0;
+    flex-direction: column;
+}
+
+footer img {
+    height: 50px;
+}
+
+.social-icons-footer,
+.requires-footer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-icons-footer i {
+    color: black;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.requires-footer p {
+    margin: 20px 0;
+    font-family: var(--font-primary);
+    text-align: center;
+    color: black;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.requires-footer a {
+    text-decoration: none;
+}
+
+.requires-footer p:hover {
+    color: #6b6b6b;
+}
+
+.copyright {
+    font-family: var(--font-primary);
+    text-align: center;
+    color: black;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+/* ―――――――――― DISEÑO REPONSIVE ―――――――――― */
+
+@media (max-width: 768px) {
+    /* MENU NAVBAR */
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nv-logo {
+        width: auto;
+    }
+
+    .nv-search {
+        display: none;
+    }
+
+    .nv-icons {
+        gap: 15px;
+    }
+
+    .nv-icons i.bx-search {
+        display: inline-block;
+    }
+
+    .responsive { 
+        visibility: visible; 
+    }
+
+    /* HEADER */
+
+    header {
+        padding: 50px 20px;
+    }
+
+    .header-title {
+        font-size: 1.5em;
+    }
+
+    .header-button {
+        margin-top: 10px;
+        padding: 8px 15px;
+    }
+
+    /* CONTENIDO */
+
+    .navbar-options-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-option {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bikes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .discount {
+        display: none;
+    }
+
+    .location-container iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        margin-bottom: 10px;
+        width: 300px;
+    }
+    
+    .partner-container .logos { 
+        flex-direction: column; 
+        gap: 20px; } 
+        
+    .partner-container .logos img { 
+        max-width: 100px; 
+    }
+
+    /* FOOTER */
+    
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .requires-footer {
+        display: none;
+    }
+
+    .social-icons-footer {
+        margin-bottom: 10px;
+    }
+}
