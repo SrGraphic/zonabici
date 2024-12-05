@@ -1,21 +1,15 @@
 # ZonaBici 🚴‍♀️🚴‍♂️
 
-¡Bienvenido a **ZonaBici**! 🎉  
-**ZonaBici** es una tienda en línea pensada para los amantes de las bicicletas. Este proyecto busca ofrecer una experiencia de usuario fluida y atractiva, tanto en dispositivos móviles como en computadoras de escritorio. 🌍
-
----
-
 ## 📖 Descripción
 
-**ZonaBici** es una plataforma web diseñada para facilitar la compra de bicicletas, accesorios, y servicios relacionados. Su interfaz responsiva asegura que los usuarios puedan explorar cómodamente el catálogo desde cualquier dispositivo.
+**ZonaBici** es una plataforma web diseñada para facilitar la compra de bicicletas, accesorios, y servicios relacionados. Su interfaz responsiva asegura que los usuarios puedan explorar cómodamente el catálogo desde cualquier dispositivo. Es una web diseñada en una pagina como presentacion del grado. No es una web de venta real!.
 
 ### Funcionalidades principales:
 - 🔍 Navegación por categorías de productos.
-- 🛒 Carrito de compras dinámico.
-- 💳 Integración para pagos seguros.
+- 🛒 Iconos con funcionalidad.
 - 📱 Diseño responsivo para dispositivos móviles y escritorio.
-- ⭐ Sistema de valoraciones y reseñas de productos.
-- 📨 Contacto directo con el soporte.
+- ⭐ Ofertas especiales.
+- 📨 Marcas colaboradoras.
 
 ---
 
@@ -26,19 +20,16 @@ El proyecto fue desarrollado utilizando las siguientes herramientas y tecnologí
 - **Frontend**:
   - HTML5
   - CSS3
-  - JavaScript
-  - Framework CSS (e.g., Bootstrap o Tailwind CSS)
   
-- **Backend**:
-  - Node.js
-  - Express.js
-  
-- **Base de Datos**:
-  - MongoDB / MySQL
+- **Iconos**:
+  - [Flaticon](https://www.flaticon.es/)
+  - [Boxicons](https://boxicons.com/)
+
+- **Fuentes**:
+  - [Google Fonts](https://fonts.google.com/)
   
 - **Otros**:
-  - Librerías para iconos y animaciones
-  - API para pasarela de pagos
+  - [Imagenes/Informacion - Sanferbike](https://www.sanferbike.com/es/)
 
 ---
 
@@ -46,6 +37,6 @@ El proyecto fue desarrollado utilizando las siguientes herramientas y tecnologí
 
 Sigue estos pasos para ejecutar el proyecto localmente:
 
-1. **Clona el repositorio**:
+**Clona el repositorio**:
    ```bash
    git clone https://github.com/usuario/zonabici.git
