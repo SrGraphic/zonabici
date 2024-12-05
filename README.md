@@ -43,3 +43,5 @@ Sigue estos pasos para ejecutar el proyecto localmente:
    ```
 ![Licencia](https://img.shields.io/badge/license-srgraphic-lightgrey)
 ![Desarollo](https://img.shields.io/badge/version-v0.1-blue)
+
+###### 05/12/2024 By SrGraphic 
