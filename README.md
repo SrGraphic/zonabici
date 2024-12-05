@@ -38,5 +38,8 @@ El proyecto fue desarrollado utilizando las siguientes herramientas y tecnologí
 Sigue estos pasos para ejecutar el proyecto localmente:
 
 **Clona el repositorio**:
-   ```bash
+   ```
    git clone https://github.com/usuario/zonabici.git
+   ```
+![Licencia](https://img.shields.io/badge/license-srgraphic-lightgrey)
+![Desarollo](https://img.shields.io/badge/version-v0.1-blue)
