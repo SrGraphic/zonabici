@@ -33,15 +33,7 @@ El proyecto fue desarrollado utilizando las siguientes herramientas y tecnologí
 
 ---
 
-## 📦 Instalación y configuración
-
-Sigue estos pasos para ejecutar el proyecto localmente:
-
-**Clona el repositorio**:
-   ```
-   git clone https://github.com/usuario/zonabici.git
-   ```
 ![Licencia](https://img.shields.io/badge/license-srgraphic-lightgrey)
-![Desarollo](https://img.shields.io/badge/version-v0.1-blue)
+![Desarollo](https://img.shields.io/badge/version-v0.9-blue)
 
 ###### 05/12/2024 By SrGraphic 
