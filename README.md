@@ -1,15 +1,15 @@
-# Web ZonaBici 🚴‍♀️🚴‍♂️
+# Web ZonaBici
 
 ## 📖 Descripción
 
 **ZonaBici** es una plataforma web diseñada para facilitar la compra de bicicletas, accesorios, y servicios relacionados. Su interfaz responsiva asegura que los usuarios puedan explorar cómodamente el catálogo desde cualquier dispositivo. Es una web diseñada en una pagina como presentacion del grado. No es una web de venta real!.
 
 ### Funcionalidades principales:
-- 🔍 Navegación por categorías de productos.
-- 🛒 Iconos con funcionalidad.
-- 📱 Diseño responsivo para dispositivos móviles y escritorio.
-- ⭐ Ofertas especiales.
-- 📨 Marcas colaboradoras.
+-  Navegación por categorías de productos.
+- Iconos con funcionalidad.
+- Diseño responsivo para dispositivos móviles y escritorio.
+- Ofertas especiales.
+- Marcas colaboradoras.
 
 ---
 
